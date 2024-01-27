@@ -1,4 +1,8 @@
-# Small Language Model Demo: Python Workshop
+<p align="center">
+  <img src="./workshop-banner.jpg" alt="workshop banner" width="70%">
+  <br>
+  <h1 align="center">Living Code Workshop: SLMs in Python</h1>
+</p>
 
 ## Overview
 
@@ -9,21 +13,23 @@ Welcome to our GitHub repository, designed for the Roanoke College computer scie
 - **Customizable Grammars**: Implements Llama grammars for constrained outputs, ensuring relevance and precision.
 - **Real-time Demonstrations**: Includes live examples to illustrate the use of language models in practical scenarios.
 
-## Prerequisites
-To run the script, you will need to install the `llama-cpp-python` library. You can do this using pip:
-
-```bash
-python3 -m pip install --user llama-cpp-python
-```
-
-## Installation
+## Set Up
 Clone this repository to your local machine using the following command:
 
 ```bash
 git clone https://github.com/tchlux/roanoke-slm-workshop
 ```
 
-Then download your favorite small language model (examples below) and put it into this directory for easy access.
+To run the script, you will need to install the `llama-cpp-python` library. You can do this using pip:
+
+```bash
+python3 -m pip install --user llama-cpp-python
+```
+
+Then download your favorite small language model (examples below) and put it into this directory for easy access. For optimal performance, we recommend using one of the following models:
+
+1. **Mistral Instruct**: A versatile model suitable for various instructional tasks. [Model Link](https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF)
+2. **StableLM Zephyr**: A smaller, more efficient model for quick and compact responses. [Model Link](https://huggingface.co/TheBloke/stablelm-zephyr-3b-GGUF)
 
 ## Usage
 The script allows you to interact with pre-trained language models. To run the script, navigate to the cloned repository's directory and execute:
@@ -32,14 +38,15 @@ The script allows you to interact with pre-trained language models. To run the s
 python3 slm.py
 ```
 
-## Example Models
-For optimal performance, we recommend using one of the following models:
+There is an additional script that shows how to call the Google search API from code to fetch knowledge and real time information.
 
-1. **Mistral Instruct**: A versatile model suitable for various instructional tasks. [Model Link](https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF)
-2. **StableLM Zephyr**: A smaller, more efficient model for quick and compact responses. [Model Link](https://huggingface.co/TheBloke/stablelm-zephyr-3b-GGUF)
+```bash
+python3 google.py
+```
 
-## Resources
-- **LM Studio**: For a selection of local language models, visit [lmstudio.ai](https://lmstudio.ai).
+## Useful Links
+
+- **LM Studio**: For a selection of local language models and a pretty user interface, visit [lmstudio.ai](https://lmstudio.ai).
 - **Hugging Face**: Explore a wide range of models published on [huggingface.com](https://huggingface.com).
 
 ## Contributing
